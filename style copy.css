@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(202, 229, 241);
+    margin: 0;
+    padding: 0;
+}
+.container { 
+    height: 500px;
+    width: 700px;
+    margin-top: 50px;
+    margin: 30px auto;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+.hide {
+    display: none;
+}
+#start {
+    background-color: #4b5052;
+	border: 2px solid black;
+	color: whitesmoke;
+	padding left: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 22%; 
+}
+.time {
+	border: 2px solid black;
+	color: black;
+	padding left: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 22%;
+}
+
+
