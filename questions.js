@@ -22,5 +22,6 @@ var quizQuestions = [  {
     question: "What will this output? var a =[1,2,3]; console.log(a[6])",
     choices:["0","undefined","error"],
     answer: "undefined",
-    },]
+    }
+];
     

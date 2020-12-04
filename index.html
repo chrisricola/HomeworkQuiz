@@ -19,13 +19,18 @@
             <p>Press start to begin the Quiz, Score will be saved!</p>
             <button id="start">start quiz</button>
         </div>
-            <div id="question" class="hide">
-                <h2 id="questionTitle">
-                 Question Title   
-                </h2>
-                <div id="choices" class="hide">
-                </div>
-            </div>
+        <div id="question" class="hide">
+            <h2 id="questionTitle"></h2>
+            <div id="choices" class="hide"></div>
+        </div>
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+              Enter initials: <input type="text" id="initials" max="3" />
+              <button id="submit">Submit</button>
+            </p>
+          </div>
 
      </div>
     <script src="questions.js"></script>
