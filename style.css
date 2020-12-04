@@ -1,7 +1,8 @@
 body{
     background-color: rgb(202, 229, 241);
     margin: 0;
-    padding: 0;
+	padding: 0;
+	font-size: 120%;
 }
 .container { 
     height: 500px;
@@ -22,7 +23,7 @@ body{
     background-color: #4b5052;
 	border: 2px solid black;
 	color: whitesmoke;
-	padding left: 50px;
+	/* padding left: 50px; */
 	text-align: center;
 	text-decoration: none;
 	font-size: 1em;
@@ -32,12 +33,17 @@ body{
 .time {
 	border: 2px solid black;
 	color: black;
-	padding left: 50px;
+	/* padding left: 50px; */
 	text-align: center;
 	text-decoration: none;
 	font-size: 1em;
 	display: inline-block;
 	width: 22%;
 }
+.timer {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+  }
 
 
