@@ -9,11 +9,20 @@ var currentQuestionIndex = 0;
 var time = quizQuestions.length * 15;
 var timerId;
 
-var questionsEl = document.getElementById("questions");
+var questionsEl = document.getElementById("question");
 var timerEl = document.getElementById("time");
 var choicesEl = document.getElementById("choices");
 var startBtn = document.getElementById("start");
 
+function startQuiz(){
+  var startScreenEl = document.getElementById("startScreen");
+  startScreenEl.setAttribute("class", "hide"); 
+  questionsEl.removeAttribute("class");
+  timerId = setInterval(clockTick, 1000);
+  timerEl.textContent = time;
+  getQuestions(0);
+  console.log("start")
+}
 // function setTime() {
 //   var timerInterval = setInterval(function() {
 //     secondsLeft--;
@@ -85,24 +94,26 @@ function endQuiz() {
   // Create a text node with the results
   // Append the text node to #question
 }
-/*
 
-  
+
+function clockTick (){
+  time--;
+  timerEl.textContent=time;
+}  
     
 
 //console.log(currentQuestion.choices);
 //console.log(currentQuestion);
-}*/
 
-function startQuiz() {
-  var startScreenEl = document.getElementById("startScreen");
-  startScreenEl.setAttribute("class", "hide");
-  questionDiv.removeAttribute("class")
-  setTime();
-  getQuestions(0);
-}
+// function startQuiz() {
+//   var startScreenEl = document.getElementById("startScreen");
+//   startScreenEl.setAttribute("class", "hide");
+//   questionDiv.removeAttribute("class")
+//   setTime();
+//   getQuestions(0);
+// }
 
-startButton.onclick = startQuiz;
+startBtn.onclick = startQuiz;
 
 
 
