@@ -1,29 +1,36 @@
-var questionDiv = document.getElementById("question");
-var startButton = document.getElementById("start");
+// var questionDiv = document.getElementById("question");
+// var startButton = document.getElementById("start");
 // var question= [];
-var score= 0;
-var totalQuestions = quizQuestions.length;
-var timeEl = document.querySelector(".time");
-var secondsLeft = totalQuestions * 5;
+// var score= 0;
+// var totalQuestions = quizQuestions.length;
+// var timeEl = document.querySelector(".time");
+
 var currentQuestionIndex = 0;
+var time = quizQuestions.length * 15;
+var timerId;
 
-function setTime() {
-  var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timeEl.textContent = secondsLeft + ": seconds";
+var questionsEl = document.getElementById("questions");
+var timerEl = document.getElementById("time");
+var choicesEl = document.getElementById("choices");
+var startBtn = document.getElementById("start");
 
-    if(secondsLeft === 0 || secondsLeft < 0) {
-      clearInterval(timerInterval);
-      sendMessage();
-    }
-  }, 1000);
-}
+// function setTime() {
+//   var timerInterval = setInterval(function() {
+//     secondsLeft--;
+//     timeEl.textContent = secondsLeft + ": seconds";
 
-function sendMessage() {
-  // alert('Quiz Over')
-  timeEl.textContent = " ";
-  // var imgEl = document.createElement("img");
-}
+//     if(secondsLeft === 0 || secondsLeft < 0) {
+//       clearInterval(timerInterval);
+//       sendMessage();
+//     }
+//   }, 1000);
+// }
+
+// function sendMessage() {
+//   // alert('Quiz Over')
+//   timeEl.textContent = " ";
+//   // var imgEl = document.createElement("img");
+// }
 var results = [];
 function getQuestions(questionNumber) {
 
