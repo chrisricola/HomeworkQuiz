@@ -49,7 +49,7 @@ function getQuestions() {
   titleEl.textContent = currentQuestion.question
   console.log("get questions",currentQuestion);
 
-  choicesEl.innerHTML = "";
+  // choicesEl.innerHTML = "";
 
   currentQuestion.choices.forEach(function(choice,i){
     var choiceNode = document.createElement("button");
