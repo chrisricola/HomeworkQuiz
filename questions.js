@@ -18,10 +18,10 @@ var quizQuestions = [  {
     choices:["name and value", "class and Id", "body and head"],
     answer: "name and value",
     },
-    {
-    question: "What will this output? var a =[1,2,3]; console.log(a[6])",
-    choices:["0","undefined","error"],
-    answer: "undefined",
-    }
+    // {
+    // question: "What will this output? var a =[1,2,3]; console.log(a[6])",
+    // choices:["0","undefined","error"],
+    // answer: "undefined",
+    // }
 ];
     

@@ -21,7 +21,7 @@ function startQuiz(){
   timerId = setInterval(clockTick, 1000);
   timerEl.textContent = time;
   getQuestions(0);
-  console.log("start")
+  // console.log("start")
 }
 // function setTime() {
 //   var timerInterval = setInterval(function() {
@@ -82,23 +82,26 @@ function getQuestions(questionNumber) {
 //console.log(currentQuestion);
 }
 function endQuiz() {
-  var totalRight = 0;
-  for (var i = 0 ; i < results.length; i++) {
-    if (results[i]) {
-      totalRight++;
-    }
+//   var totalRight = 0;
+//   for (var i = 0 ; i < results.length; i++) {
+//     if (results[i]) {
+//       totalRight++;
+//     }
   }
 
-  var percentage = totalRight / results.length;
+  // var percentage = totalRight / results.length;
   // Delete everything in #question
   // Create a text node with the results
   // Append the text node to #question
-}
+// }
 
 
 function clockTick (){
   time--;
   timerEl.textContent=time;
+  if (time <= 0){
+    endQuiz();
+  }
 }  
     
 
