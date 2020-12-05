@@ -40,16 +40,32 @@ function startQuiz(){
 //   timeEl.textContent = " ";
 //   // var imgEl = document.createElement("img");
 // }
-var results = [];
+// var results = [];
 function getQuestions() {
 
   var currentQuestion = quizQuestions[questionNumber];
 
   var titleEl = document.getElementById("questionTitle") // = <div></div>
   titleEl.textContent = currentQuestion.question
-  // console.log("get questions",currentQuestion);
-  var choices = document.getElementById("choices") 
-  choices.classList.remove("hide");
+  console.log("get questions",currentQuestion);
+
+  choicesEl.innerHTML = "";
+
+  currentQuestion.choices.forEach(function(choice,i){
+    var choiceNode = document.createElement("button");
+    console.log('button');
+    choiceNode.setAttribute("class", "choice");
+    choiceNode.setAttribute("value", choice);
+
+    choiceNode.textContent = i + 1 + ". " + choice;
+
+    // choiceNode.onclick = questionClick;
+
+    choicesEl.appendChild(choiceNode);
+    console.log("choices");
+  });
+  // var choices = document.getElementById("choices") 
+  // choices.classList.remove("hide");
 
   // for( var i = 0; i < currentQuestion.choices.length; i++) {
     // console.log('test', currentQuestion.choices[i])
