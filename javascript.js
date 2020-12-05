@@ -82,6 +82,13 @@ function getQuestions(questionNumber) {
 //console.log(currentQuestion);
 }
 function endQuiz() {
+
+  clearInterval(timerId);
+
+  var endScreenEl = document.getElementById("endScreen");
+  endScreenEl.removeAttribute("classs");
+
+  questionsEl.setAttribute("class", "hide");
 //   var totalRight = 0;
 //   for (var i = 0 ; i < results.length; i++) {
 //     if (results[i]) {
