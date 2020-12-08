@@ -59,10 +59,9 @@ function getQuestions() {
 
     choiceNode.textContent = i + 1 + ". " + choice;
 
-    // choiceNode.onclick = questionClick;
+    choiceNode.onclick = questionClick;
 
     choicesEl.appendChild(choiceNode);
-    console.log("choices");
   });
   // var choices = document.getElementById("choices") 
   // choices.classList.remove("hide");
@@ -94,7 +93,10 @@ function getQuestions() {
     // var questions = currentQuestion.question
     // qEl.textContent = questions;// <div> our questions text goes in here </div>
   
-    
+function questionClick(){
+  questionNumber++;
+  console.log("checking");
+}
 
 //console.log(currentQuestion.choices);
 //console.log(currentQuestion);
