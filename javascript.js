@@ -43,49 +43,18 @@ function getQuestions() {
 
     choicesEl.appendChild(choiceNode);
   });
-  // var choices = document.getElementById("choices") 
-  // choices.classList.remove("hide");
-
-  // for( var i = 0; i < currentQuestion.choices.length; i++) {
-    // console.log('test', currentQuestion.choices[i])
-    // var para = document.createElement("p");
-    // para.className = 'choice';
-    // onlick handler for the p element, once clicked it would compare the value of the text of the P elmeent currentQuestion.answer
-    // para.onclick = function(events){
-    //   var isCorrect = events.target.innerText === currentQuestion.answer
-    //   var isLast = quizQuestions.length - 1 === questionNumber;
-    //   choices.innerHTML = '';
-    //   results.push(isCorrect);
-      // if this isn't the last question, call getQuestion on next question number
-      // getQuestions(questionNumber + 1)
-
-       // otherwise print out score and tell the user to send endQuiz()
-    // }
-    // var node = document.createTextNode(currentQuestion.choices[i]);
-    // para.appendChild(node);
-    // choices.appendChild(para);
   }
-  // Create a function to match answers against chosen answer by user.
-
-  // if it is correct add to score then iterate currentQuestionIndex, else subtract score then iterate currentQuestionIndex
-  // call this function in the getQuestions function
-    //console.log(currentQuestion.question);
-    // var questions = currentQuestion.question
-    // qEl.textContent = questions;// <div> our questions text goes in here </div>
   
 function questionClick(){
   questionNumber++;
 
   if (questionNumber === quizQuestions.length) {
-    quizEnd();
+    endQuiz();
   } else {
     getQuestions();
   }
 }
 
-//console.log(currentQuestion.choices);
-//console.log(currentQuestion);
-// }
 function endQuiz() {
 
   clearInterval(timerId);
