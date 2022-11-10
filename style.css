@@ -1,21 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(202, 229, 241);
+    background-color: rgb(160, 167, 170);
+	color: #fff;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
     margin: 0;
 	padding: 0;
-	font-size: 120%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;	
 }
+
 .container { 
-    height: 500px;
-    width: 700px;
-    margin-top: 50px;
-    margin: 30px auto;
-    border-radius: 8px;
-    background-color: antiquewhite;
+    margin: 20px 0;
 }
-.wrapper {
-	margin: 100px auto 0 auto;
-	max-width: 600px;
-  }
+
+.scores a {
+	color: #563d7c;
+	text-decoration: none;
+	font-size: large;
+	font-weight: bold;
+}
+
+.timer {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+.start h1 {
+	text-align: center;
+}
+.start p {
+	padding-top: 15px;
+}
+
+/* #start {
+    background-color: #4b5052;
+	
+	color: whitesmoke;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 22%; 
+} */
+
+.start button {
+	background-color: #563d7c;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 10px;
+}
 
 button {
 	display: inline-block;
@@ -26,7 +66,7 @@ button {
 	border-radius: 5px;
 	padding: 2px 10px;
 	color: rgb(247, 243, 243);
-	border: 0;
+	border: none ;
 	transition: background-color 0.1s;
   }
   button:hover {
@@ -40,17 +80,7 @@ button {
 .hide {
     display: none;
 }
-#start {
-    background-color: #4b5052;
-	border: 2px solid black;
-	color: whitesmoke;
-	/* padding left: 50px; */
-	text-align: center;
-	text-decoration: none;
-	font-size: 1em;
-	display: inline-block;
-	width: 22%; 
-}
+
 .time {
 	border: 2px solid black;
 	color: black;
@@ -61,10 +91,6 @@ button {
 	display: inline-block;
 	width: 22%;
 }
-.timer {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-  }
+
 
 

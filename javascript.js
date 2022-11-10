@@ -1,10 +1,3 @@
-// var questionDiv = document.getElementById("question");
-// var startButton = document.getElementById("start");
-// var question= [];
-// var score= 0;
-// var totalQuestions = quizQuestions.length;
-// var timeEl = document.querySelector(".time");
-
 var questionNumber = 0;
 var time = quizQuestions.length * 15;
 var timerId;
