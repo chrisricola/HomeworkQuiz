@@ -12,11 +12,13 @@ body{
     margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 100%;	
 }
 
 .container { 
     margin: 20px 0;
+	padding: 100px;
+	background-color: #b8afc6;
+	border-radius: 5px;
 }
 
 .scores a {
@@ -34,6 +36,7 @@ body{
 
 .start h1 {
 	text-align: center;
+	text-shadow: 1px 0 10px #8570a5;
 }
 .start p {
 	padding-top: 15px;
@@ -52,25 +55,39 @@ body{
 
 .start button {
 	background-color: #563d7c;
+	color: #fff;
 	border-radius: 10px;
 	margin-top: 15px;
 	padding: 10px;
+	box-shadow: 5px 5px 2px #301f4a;
 }
 
-button {
-	display: inline-block;
-	margin: 5px;
+.choices {
+	text-align: center;
+}
+
+#questionTitle {
+	text-decoration: underline  #8570a5;
+}
+
+.choices button {
+	text-align: left;
+	margin: 15px;
 	cursor: pointer;
 	font-size: 100%;
 	background-color: #563d7c;
 	border-radius: 5px;
-	padding: 2px 10px;
+	padding: 8px 20px 8px 20px;
 	color: rgb(247, 243, 243);
 	border: none ;
 	transition: background-color 0.1s;
+	
+	box-shadow: inset 5em 1em #8570a5;
+	box-shadow: 5px 5px 2px #301f4a;
   }
+
   button:hover {
-	background-color: #8570a5;
+	background-color: #47109b;
   }
   
   .choices button {
